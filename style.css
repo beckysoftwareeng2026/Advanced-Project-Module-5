@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -33,10 +33,11 @@ section {
   transition: all 300ms ease;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
-  background-color: #242424;
-  color: #fff;
+  background-color: rgb(236, 234, 234);
+  color: black;
   outline: none;
   border: 3px solid #c0c4cc;
   border-top: none;
@@ -57,12 +58,14 @@ label {
   font-weight: bold;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
 
-input:focus, textarea:focus {
-  border-color: #f06449;
+input:focus,
+textarea:focus {
+  border-color: #5d3eff;
 }
 
 .container {
@@ -97,8 +100,8 @@ input:focus, textarea:focus {
   line-height: 1;
 }
 
-.orange {
-  color: #f06449 !important;
+.purple {
+  color: #5d3eff !important;
 }
 
 .link__hover-effect {
@@ -149,8 +152,7 @@ nav,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
-{
+.dark-theme .header__para {
   color: white;
 }
 .dark-theme section {
@@ -201,7 +203,7 @@ nav,
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: #5d3eff;
   color: white;
   padding: 6px;
   width: 32px;
@@ -259,7 +261,7 @@ nav,
   0% {
     transform: translateY(3px);
   }
-  
+
   100% {
     transform: translateY(-3px);
   }
@@ -324,9 +326,12 @@ nav {
   display: flex;
   visibility: hidden;
   z-index: -1;
-  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  transition:
+    visibility 1s,
+    z-index 1s,
+    box-shadow 0.5s ease;
 }
-.modal--open .modal{
+.modal--open .modal {
   z-index: 60;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   visibility: visible;
@@ -342,8 +347,7 @@ nav {
 }
 
 .modal--open .modal__about,
-.modal--open .modal__contact
-{
+.modal--open .modal__contact {
   transform: translateX(0%);
 }
 
@@ -389,7 +393,7 @@ nav {
 
 .modal__contact {
   transform: translateX(110%);
-  background-color: #242424;
+  background-color: #5d3eff;
   color: white;
 }
 
@@ -412,8 +416,8 @@ nav {
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: black;
+  border: 2px solid #5d3eff;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -429,8 +433,8 @@ nav {
 }
 
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: black;
+  color: #5d3eff;
 }
 
 .modal__overlay {
@@ -446,12 +450,12 @@ nav {
 }
 
 .modal__overlay--loading {
-  background-color: #242424;
+  background-color: white;
   font-size: 80px;
 }
 
 .modal__overlay--success {
-  background-color: #4bb543;
+  background-color: #5d3eff;
   font-size: 40px;
   font-weight: 700;
   text-align: center;
@@ -529,13 +533,15 @@ nav {
   left: 90px;
   transform: translateY(100%);
   opacity: 0;
-  transition: opacity 300ms, transform 450ms ease;
+  transition:
+    opacity 300ms,
+    transform 450ms ease;
   color: white;
   max-width: 550px;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
-  opacity: 0.7; 
+  opacity: 0.7;
   visibility: visible;
 }
 
@@ -546,7 +552,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: #1c1d25;
-  opacity: 0; 
+  opacity: 0;
   transition: all 450ms ease;
   visibility: hidden;
 }
