@@ -103,6 +103,10 @@ textarea:focus {
 .purple {
   color: #5d3eff !important;
 }
+.text--purple {
+  color: #5d3eff;
+  font-weight: 700;
+}
 
 .link__hover-effect {
   position: relative;
