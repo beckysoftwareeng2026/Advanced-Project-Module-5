@@ -403,6 +403,7 @@ nav {
 
 .modal__title {
   font-size: 26px;
+  padding: 12px;
 }
 
 .modal__sub-title {
